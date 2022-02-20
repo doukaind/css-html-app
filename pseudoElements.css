@@ -1,0 +1,29 @@
+li:last-child {
+  /* color: yellow; */
+  /* background-color: blue; */
+}
+
+li:first-child {
+  /* color: blue; */
+}
+/* 
+li:nth-child(odd) {
+  color: rgb(252, 155, 37);
+} */
+/* li:nth-child(2) {
+  color: rgb(252, 155, 37);
+} */
+li:nth-child(even) {
+  color: rgb(252, 155, 37);
+}
+
+/* Selects every second element
+   among any group of siblings */
+li:nth-child(2n) {
+  color: lime;
+}
+
+/* Selects odd elements*/
+li:nth-child(2n-1) {
+  color: black;
+}
