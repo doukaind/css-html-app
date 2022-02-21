@@ -27,3 +27,5 @@ li:nth-child(2n) {
 li:nth-child(2n-1) {
   color: black;
 }
+
+/* first-child - takes first child of an element */

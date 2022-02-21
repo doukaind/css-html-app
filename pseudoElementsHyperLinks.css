@@ -1,0 +1,26 @@
+/* Styling Links */
+/*pseudoclass*/
+a {
+}
+
+/* L V H A */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  /* color: #777; */
+  color: #1098ad;
+}
+
+a:hover {
+  color: orange;
+  font-weight: bold;
+  text-decoration: underline orange;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}

@@ -1,0 +1,8 @@
+body {
+  color: red;
+  font-family: sans-serif;
+}
+
+p {
+  color: fuchsia; /* overide inherited style from body */
+}

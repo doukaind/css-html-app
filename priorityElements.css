@@ -1,0 +1,27 @@
+/* Resolving conflicts*/
+#copyright {
+  /* if hover on style we have Selector Specificity: (1, 0, 0) which tells us priority */
+  /* id selector has higer priority than rest */
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
+}
+
+a {
+  color: red;
+}
+
+a:link {
+  /* has higher priority */
+  color: green;
+}

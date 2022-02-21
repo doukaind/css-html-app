@@ -1,0 +1,16 @@
+body {
+  font-size: 2rem;
+  border: 3px solid red;
+  height: 200px;
+  /* width: 100%; */
+}
+
+.example {
+  background: #234;
+  color: white;
+  height: auto; /* grows automatically depends from the content, adjusted to the content*/
+  /* min-height: 50vh; if it needs more space than it takes otherwise it locks on 50% of vh */
+}
+
+/* if height of child is bigger then parent then it overflow the parent */
+/* min-height is good feature if we want have minimum hieght*/
