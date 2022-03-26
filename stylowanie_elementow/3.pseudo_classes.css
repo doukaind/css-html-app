@@ -1,0 +1,37 @@
+p:hover {
+  /* when hover over any p element */
+  color: blue;
+}
+
+/* h1:hover {
+  color: red;
+  padding-left: 50px;
+} */
+
+a {
+  color: yellowgreen;
+}
+h1:focus {
+  color: white;
+}
+
+a:focus {
+  color: green;
+}
+
+a:visited {
+  color: blueviolet;
+}
+
+p:last-child {
+  /* osatnie dziecko */
+  color: violet;
+}
+/* 
+p:nth-child(2) {
+  color: pink;
+} */
+p:nth-child(2n) {
+  /* co 2-gi element*/
+  color: rgb(189, 97, 27);
+}

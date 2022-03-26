@@ -1,0 +1,102 @@
+p {
+  /* border: 2px solid blue; */
+  position: relative;
+  width: 200px;
+  margin: auto;
+  font-size: 30px;
+}
+
+/* p::before {
+  content: "Siema ";
+}
+
+p::after {
+  content: " Dawid";
+} */
+
+/* display block */
+/* p::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 100px;
+  background-color: blue;
+}
+
+p::after {
+  content: "";
+} */
+
+/* p::before {
+  content: "";
+
+  width: 50px;
+  height: 100%;
+  background-color: blue;
+  position: absolute;
+
+  left: -50px;
+}
+
+p::after {
+  content: "";
+
+  width: 50px;
+  height: 100%;
+
+  right: -50px;
+  background-color: red;
+  position: absolute;
+} */
+
+/*icons*/
+
+/* p::before {
+  content: url("https://cdn-icons-png.flaticon.com/512/1384/1384028.png");
+
+  width: 50px;
+  height: 100%;
+  background-color: blue;
+  position: absolute;
+  font-size: 10px;
+  left: -50px;
+}
+
+p::after {
+  content: url("https://cdn-icons-png.flaticon.com/512/1384/1384028.png");
+
+  width: 50px;
+  height: 100%;
+  font-size: 10px;
+  right: -50px;
+  background-color: red;
+  position: absolute;
+} */
+
+p::before {
+  content: "";
+  width: 50px;
+  height: 100%;
+  background-color: blue;
+  position: absolute;
+  font-size: 10px;
+  left: -50px;
+  transition: transform 0.3s ease-in;
+  will-change: transform;
+}
+
+p:hover::before {
+  /* transform: translateX(-50px); */
+  transform: scale(1.5);
+}
+
+/* p::after {
+  content: "";
+
+  width: 50px;
+  height: 100%;
+  font-size: 10px;
+  right: -50px;
+  background-color: red;
+  position: absolute;
+} */

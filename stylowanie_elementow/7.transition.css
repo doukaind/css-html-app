@@ -1,0 +1,80 @@
+div {
+  margin-top: auto;
+  width: 300px;
+  height: 100px;
+}
+
+.btn {
+  overflow: hidden;
+  position: relative;
+  width: 320px;
+  height: 80px;
+  background-color: hsl(10, 100%, 50%);
+  border: none;
+  font-size: 2.3em;
+  color: white;
+
+  border-bottom: 7px solid hsl(10, 100%, 45%);
+  padding-top: 5px;
+  z-index: 1;
+}
+
+/* .btn:hover {
+  background-color: hsl(40, 100%, 50%);
+  opacity: 0;
+} */
+/* 
+.btn:focus {
+  background-color: hsl(40, 100%, 50%);
+} */
+
+/* Tak nie robic! */
+/* 
+.btn::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(10, 100%, 43%);
+  top: 0;
+  right: -100%;
+  transition: 0.5s ease-out;
+}
+
+.btn:hover::after {
+  right: 0;
+} */
+
+.btn::after {
+  content: "";
+
+  position: absolute;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+  background-color: hsl(10, 100%, 43%);
+  top: 0;
+  right: -100%;
+  transition: transform 0.5s ease-out;
+  will-change: transform;
+}
+
+.btn:hover::after {
+  transform: translateX(-100%);
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 10%);
+  transform: scale(0);
+  transition: transform 1s ease-in-out;
+}
+
+.btn:hover ~ .box {
+  transform: scale(1);
+}

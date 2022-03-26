@@ -1,0 +1,37 @@
+input:required {
+  border: 1px solid black;
+}
+
+input:optional {
+  border: 1px solid silver;
+}
+
+input:disabled {
+  background: green;
+}
+input:enabled {
+  background: rgb(203, 206, 33);
+}
+
+input:read-only {
+  color: rgb(175, 63, 134);
+  padding: 10px;
+}
+
+input:read-write {
+  border: 10px solid black;
+}
+
+input:checked {
+  height: 50px;
+  width: 50px;
+}
+
+input:invalid {
+  background-color: red;
+}
+
+input:required {
+  margin: 20px;
+  background-color: bisque;
+}
