@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .row {
+            margin: 20px;
+        }
+
+        .col {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Wybierz konfigurację samochodu</h1>
+    </header>
+    <main>
+        <aritcle>
+            <form action="order.php" method="post">
+                <div class="row">
+                    <!-- fieldset - html 5 znacznik -->
+                    <fieldset>
+                        <legend>Rodzaj nadwozia</legend>
+                        <div><label>
+                                <input type="radio" value="1" name="nadwozie">Hatchback</input>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" value="2" name="nadwozie">Kabriolet</input>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" value="3" name="nadwozie">Kombi</input>
+                            </label>
+                        </div>
+
+                    </fieldset>
+                </div>
+                <div class="row">
+                    <label for="silnik">Rodzaj silnika</label>
+                    <select id="silnik">
+                        <option value="w">wysokoprężny</option>
+                        <option value="b" selected>benzynowy</option>
+                        <option value="e">elektryczny</option>
+                        <option value="h">hybrydowy</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <fieldset>
+                        <legend>Wyposażenie samochodu</legend>
+                        <div class="col">
+                            <div>
+                                <label> <input type="checkbox" name="wyp[]" value="1" checked required
+                                        disabled>klimatyzacja</input></label>
+                            </div>
+                            <div>
+                                <label> <input type="checkbox" value="2" checked disabled>systemy: ESP i
+                                    ABS</input></label>
+                            </div>
+                            <div>
+                                <label> <input type="checkbox" value="3">tempomat</input></label>
+                            </div>
+                            <div>
+                                <label> <input type="checkbox" value="4">tylny spojler dachowy</input></label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <label> <input type="checkbox" value="5">podgrzewane fotele</input></label>
+                            </div>
+
+                            <div>
+                                <label> <input type="checkbox">światła LED do jazdy dziennej</input></label>
+                            </div>
+                            <div>
+                                <label> <input type="checkbox">klimatyzacja</input></label>
+                            </div>
+                            <div>
+                                <label> <input type="checkbox">klimatyzacja</input></label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <label> <input type="checkbox">klimatyzacja</input></label>
+                            </div>
+                            <div>
+                                <label> <input type="checkbox">klimatyzacja</input></label>
+                            </div>
+                            <div>
+                                <label> <input type="checkbox">klimatyzacja</input></label>
+                            </div>
+                            <div>
+                                <label> <input type="checkbox">klimatyzacja</input></label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="row">
+                    <label for="choinka">Jakie choinki zapachowe?</label>
+                    <select id="choinka" name="choinka" multiple size="8">
+                        <option value="w">kokosowa</option>
+                        <option value="b" selected>cytrynowa</option>
+                        <option value="e">truskawkowa</option>
+                        <option value="h">zapachowa</option>
+                    </select>
+                </div>
+            </form>
+
+            <!-- pole tekstowe -->
+            <div class="row">
+                <label>Imię <input type="text" name="imie" placeholder="Jan"></label>
+                <label>Hasło <input type="password" name="haslo" placeholder="Haslo"></label>
+                <label>Szukaj <input type="search" name="fraza" placeholder="Szukaj"></label>
+            </div>
+            <div class="row">
+                <label>Ile kluczykow<input type="number" required> </label>
+
+            </div>
+            <div class="row">
+                <input type="submit" value="Zamawiam">
+
+
+                <input type="button" value="Zamawiam">
+                <!-- robi to samo co input submit -->
+                <button>Zamawiam</button>
+                <button type="button">Zamawiam</button>
+            </div>
+        </aritcle>
+    </main>
+</body>
+
+</html>
